@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Muzium Maya | Warisan Tanah Air</title>
+    
+     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1 class="logo">WARISAN</h1>
+    <ul class="nav-links">
+      <li><a href="homepage.html">Utama</a></li>
+      <li><a href="Galeri.html">Galeri</a></li>
+      <li><a href="artifak.html">Artifak</a></li>
+      <li><a href="Kronologi.html">Kronologi</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<section id="timeline" class="section">
+  <div class="section-header reveal">
+    <h2>Garis Masa Sejarah</h2>
+  </div>
+  <div class="timeline">
+    <div class="event reveal">
+        <strong>11,000 SM</strong>
+        <p>Zaman Paleolitik yang membuktikan kewujudan awal manusia di Tanah Melayu, khususnya melalui penemuan Manusia Perak.</p>
+    </div>
+    <div class="event reveal">
+        <strong>Abad ke-2 M</strong>
+        <p>Kemunculan penempatan terancang dan perkembangan tamadun awal di Lembah Sungai Batu, Kedah Tua.</p>
+    </div>
+    <div class="event reveal">
+        <strong>1400 M</strong>
+        <p>Penubuhan Kesultanan Melayu Melaka oleh Parameswara sebagai pusat pemerintahan dan perdagangan utama di Alam Melayu.</p>
+    </div>
+    <div class="event reveal">
+        <strong>1957 </strong>
+        <p>Pengisytiharan kemerdekaan Tanah Melayu, menandakan berakhirnya pemerintahan kolonial dan bermulanya era pemerintahan sendiri.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="feedback" class="section">
+  <div class="section-header reveal">
+    <h2>Maklum Balas</h2>
+    <p>Kongsi pendapat anda tentang koleksi warisan kami.</p>
+  </div>
+  <div class="feedback-container">
+    <form id="feedbackForm">
+      <input type="text" placeholder="Nama Anda" required>
+      <select id="rating">
+        <option value="5">⭐⭐⭐⭐⭐ (Cemerlang)</option>
+        <option value="4">⭐⭐⭐⭐ (Bagus)</option>
+        <option value="3">⭐⭐⭐ (Biasa)</option>
+      </select>
+      <textarea placeholder="Tulis komen atau cadangan anda..." rows="5" required></textarea>
+      <button type="submit" class="btn">Hantar Maklum Balas</button>
+    </form>
+    <div id="formMessage"></div>
+  </div>
+</section>
+
+
+<div id="thankYouModal" class="modal">
+  <div class="modal-content" style="text-align: center;">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h2 id="modalTitle">Terima Kasih!</h2>
+    <p style="color: var(--text-dim); margin-top: 10px;">
+      Maklum balas anda amat bermakna bagi kami dalam memelihara warisan negara.
+    </p>
+    <br>
+    <button class="btn" onclick="closePopup()">Tutup</button>
+  </div>
+</div>
+
+
+<footer>
+  © 2026 Warisan Digital Malaysia
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

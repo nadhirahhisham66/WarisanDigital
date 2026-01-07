@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Muzium Maya | Warisan Tanah Air</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <nav class="navbar">
+    <h1 class="logo">WARISAN</h1>
+    <ul class="nav-links">
+      <li><a href="homepage.html">Utama</a></li>
+      <li><a href="galeri.html">Galeri</a></li>
+      <li><a href="artifak.html">Artifak</a></li>
+      <li><a href="kronologi.html">Kronologi</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+
+<section id="exhibition" class="section">
+  <div class="section-header reveal">
+    <h2>Sayap Pameran</h2>
+    <p>Terokai zaman-zaman penting yang membentuk identiti Malaysia.</p>
+  </div>
+
+  <div class="grid">
+    <div class="card reveal clickable-card" data-id="proto">
+        <h3>Zaman Proto-Sejarah</h3>
+        <p>Penemuan Manusia Perak dan bukti awal kewujudan manusia.</p>
+    </div>
+    <div class="card reveal clickable-card" data-id="kedah-tua">
+        <h3>Era Kedah Tua</h3>
+        <p>Kegemilangan tamadun Sungai Batu sebagai pusat peleburan besi.</p>
+    </div>
+    <div class="card reveal clickable-card" data-id="melaka">
+        <h3>Kesultanan Melaka</h3>
+        <p>Zaman keemasan perdagangan antarabangsa di rantau ini.</p>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+   © 2026 Warisan Digital Malaysia
+</footer>
+
+<div id="artifactModal" class="modal">
+    <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <img id="modalImage" src="" alt="Gambar Artifak" style="width:100%; height:auto; margin-bottom:20px; border-radius:5px; border: 1px solid var(--accent);">
+        <p id="modalDescription"></p>
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
